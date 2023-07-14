@@ -1,0 +1,47 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(50%);
+    animation: fadein 3s;
+  }
+
+  .showBody {
+    display: flex;
+    align-items: center;
+  }
+
+  .show {
+    position: absolute;
+    top : 20%;
+    left : 20%;
+    z-index: 8;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show h1 {
+    font-weight : 800;
+    color: white;
+  }
+
+  .showBody ul {
+    color: white;
+    font-size: 18px;
+    font-weight : 600;
+    list-style-type: none;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
